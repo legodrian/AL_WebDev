@@ -3,25 +3,50 @@
     <head>
         <title>HTML Advanced Notes</title>
         <meta charset="UTF-8">
-    </head>
+        <style>
+        /*Cascading Style Sheetd
+        1 Selector = says what to change
+        2 Declaration
+            a property = what about the element to change
+            b. value = how to change it
+             */
+            
+            body{color:darkgreen;
+            background-color:rgb(133, 133, 133);
+            border: inset 5px #001aff;}
+
+            h1{text-align: center;}
+
+            #even{color:chocolate; text-decoration:underline;} 
+            .lists{width:50%; background-color:aquamarine; border-radius:5px; font-size:2rem;}
+        </style>
+</head>
+
     <body>
     <h1> Html Advanced notes</h1>
+    <div class="lists">
         <h3>Lists:</h3>
+
+        <div>
         <ol>
             <ol type="IAa">
             <li>Adrian</li>
-            <li>Arianna</li>
+            <li id="even">Arianna</li>
             <li>Aaron</li>
         </ol>
-
+        </div>
+        
+        <div>
         <ul>
             <li><a href="https://en.wikipedia.org/wiki/Apple" target="_blank">Apple</a></li>
             <li>Orange</li>
-            <li>Banana</li>
+            <li id="even">Banana</li>
             <li>Peach</li>
-            <li>Pineapple</li>
+            <li id="even">Pineapple</li>
         </ul>
+        </div>
 
+        <div> 
         <dl>
             <dt>Fall</dt>
             <dd>Halloween</dd>
@@ -31,6 +56,8 @@
             <dd>Hanukkah</dd>
             <dd>New Years</dd>
         </dl>
+        </div>
+    </div>
 
         <h3>Atributes:</h3>
         <div>
