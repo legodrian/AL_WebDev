@@ -11,15 +11,18 @@
 
             #grid-wrapper{display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 5px;}
 
-            #flex-wrapper{display: flex; flex-direction: row; justify-content: flex-end; align-items: center; flex-wrap: wrap;}
+            #flex-wrapper{display: none; flex-direction: row; justify-content: flex-end; align-items: center; flex-wrap: wrap;}
+
+            img{width: 200px;}
 
         </style>
     </head>
     <body>
 
         <h1>Alignment Notes</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCJw0ymWxuqqNaj-81Z1oFBxF3wTBoWrggKt_Hdo9zPQ&s=10" alt="Timp" id="Timp" onmouseout="rotate">
             <div id="grid-wrapper">
-                <div id="box">
+                <div id="box" onmouseover="showHide()">
                     <p>Box 1</p>
                 </div>
                 <div id="box">
@@ -48,8 +51,42 @@
                 </div>
             </div>
 
-            <button>Click Me!</button>
+            <input type="color" id="newColor">
+            <br>
+            <button onclick="changeColor()">Click Me!</button>
+
+            <script>
+
+                let images = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTySOuL9ArtR6x2RueECbB1BRrGNWyDNmpTQNWl4DskIA&s=10", 
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYPESsWsEL6WQgpzAbZOu1d8d5z45bAf7y6JPyyukoNg&s=10" , 
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl-DqFapi0RXxQAZjXiuA5pQoG5rJTWPc0fQVuTPzcVg&s=10"]
+
+                let currentImages = 0 
+
+                function rotate(){
+                    currentImage += 1 
+                    if (currentImage > 3) 
+                    document.getElementById("Timp").src = images[currentImage]
+
+                }
+
+                function changeColor(){
+                    let currentColor = document.getElementById("newColor").value
+                    document.getElementById("box").style.backgroundColor = currentColor
+                }
+
+                function showHide(){
+                    let item = document.getElementById("flex-wrapper")
+                    if(item.style.display == "flex"){
+                        item.style.display = "none"
+                        document.getElementById("text").innerHTML = "Show More"
+                    }else{
+                        item.style.display = "flex" // block, flex, none, grid
+                        document.getElementById("text").innerHTML = "Show Less"
+                    }
+                }
 
 
+            </script>
     </body>
     </html>
