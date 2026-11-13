@@ -66,6 +66,7 @@
                 function rotate(){
                     currentImage += 1 
                     if (currentImage > 3) 
+                        currentImage = 0
                     document.getElementById("Timp").src = images[currentImage]
 
                 }
@@ -76,8 +77,8 @@
                 }
 
                 function showHide(){
-                    let item = document.getElementById("flex-wrapper")
-                    if(item.style.display == "flex"){
+                    let item = document.getElementById("flex-wrapper").style.display
+                    if(item == "flex"){
                         item.style.display = "none"
                         document.getElementById("text").innerHTML = "Show More"
                     }else{
@@ -85,7 +86,6 @@
                         document.getElementById("text").innerHTML = "Show Less"
                     }
                 }
-
 
             </script>
     </body>
