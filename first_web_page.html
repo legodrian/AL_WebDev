@@ -20,8 +20,7 @@
         .text1{padding: 25px; }
         .text2{padding: 25px; }
 
-
-
+        #Herobrine {display: none;} 
 
     </style>
     </head>
@@ -104,13 +103,13 @@ Although rumors falsely claimed he was the deceased brother of Minecraft creator
         <script>
 let item = document.getElementById("Herobrine").style.display
 
-function showHide(){
-    let item = document.getElementById("Herobrine").style.display
-        if(item == "flex")item.style.display ="none"
-        document.getElementById("Herobrine")
-        }else{
-        item.style.display = "flex"}
+function showHide(){let item = document.getElementById("Herobrine");
 
+    if(item.style.display == "none"){
+        item.style.display = "block";}
+            else{item.style.display = "none";}
+            }
+            
         </script>
     </body>
 </html>
