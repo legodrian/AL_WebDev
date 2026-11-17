@@ -1,20 +1,49 @@
 <DOCTYPE html>
     <html lang="en">
-        <head>
-            <title>Moab</title>
-            <meta charset="UTF-8">
-            <style>
+    <head>
+        
+        <title>Moab</title>
+        <meta charset="UTF-8">
+
+        <style>
+
+            .details{font-size: 18px;}
+
+            #bolddetails{font-weight: bold;}
+    
+            #italicedetails{font-style: italic;}
+
+            h1{text-align: center; margin: 50px;}
 
             img{width: 350px;}
-    
-            </style>
-        </head>
+
+            body{color:rgb(9, 0, 88);background-color: #FFDBBB; font-size: 20px;}
+
+            .Moabpic{margin-top: 25px; padding: 25px;}
+
+            .Moabpic1{margin-top: 25px; padding: 25px;}
+
+            .Moabpic2{margin-top: 25px; padding: 25px;}
+
+            .funfactB{font-weight: bold;}
+
+            .funfact{ width: 50%;display: flex; justify-content: left; background-color: rgb(2, 183, 255);}
+
+            #List{padding-left: 50px;}
+
+            .details{font-size: 18px;}
+
+        </style>
+    </head>
     
         <body>
 
             <h1>Moab</h1>
-            <p><b>Writer:</b> Adrian Leon</p>
-            <p><i>November 16, 2026</i></p>
+
+            <div class="details">
+            <p><span id="bolddetails">Writer:</span> Adrian Leon</p>
+            <p><span id="italicedetails">November 24, 2026</span></p>
+            </div>
 
                 <div class="Moabpic">
                     <a href="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Delicate_arch_sunset.jpg/1920px-Delicate_arch_sunset.jpg" target="_blank">
@@ -23,81 +52,89 @@
                     <p>Image from:<a href="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Delicate_arch_sunset.jpg/1920px-Delicate_arch_sunset.jpg" target="_blank">Wikimedia Commons</a></p>
                 </div>
 
-                <div class="Moabpic1">
-                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR5aOOOKqabtkGsIi_oxHkQpKNnhZNJw32A8myurZJPg&s=10" target="_blank">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR5aOOOKqabtkGsIi_oxHkQpKNnhZNJw32A8myurZJPg&s=10" alt="Moab"></a>
-
-                    <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Moab,_Utah_downtown.jpg" target="_blank">Wikimedia Commons</a></p>
-                </div>
-
-                <div class="Moabpic2">
-                    <a href="https://cdn12.picryl.com/photo/2016/12/31/moab-utah-arches-nature-landscapes-f03131-1024.jpg" target="_blank">
-                    <img src="https://cdn12.picryl.com/photo/2016/12/31/moab-utah-arches-nature-landscapes-f03131-1024.jpg" alt="Moab"></a>
-
-                    <p>Image from:<a href="https://picryl.com/media/moab-utah-arches-nature-landscapes-f03131" target="_blank">Picryl</a></p>
-                </div>
-            
-
             <h2>What is Moab ?</h2>
 
-            <p>Moab is a world-renowned desert adventure town in southeastern Utah that sits along the banks of the Colorado River, serving as the primary gateway to both Arches and Canyonlands National Parks. 
-            Framed by towering red sandstone cliffs, deep canyons, and the snow-capped La Sal Mountains, the area evolved from an Indigenous homeland, Mormon farming settlement, and 1950s uranium mining hub into a global mecca for outdoor recreation. 
-            Today, this small, laid-back community attracts millions of visitors each year who come to hike, mountain bike, off-road, raft, and stargaze beneath its pristine desert skies.</p> 
+            <p>Moab is a world-renowned desert adventure town in southeastern Utah that sits along the banks of the Colorado River,
+            serving as the primary gateway to both Arches and Canyonlands National Parks.<br>Framed by towering red sandstone cliffs, 
+            deep canyons, and the snow-capped La Sal Mountains, the area evolved from an Indigenous homeland, Mormon farming settlement,
+            and 1950s uranium mining hub into a global<br> mecca for outdoor recreation. Today, this small, laid-back community attracts 
+            millions of visitors each year who come to hike, mountain bike, off-road, raft, and stargaze beneath its pristine desert skies.</p>
 
-            <p><b>Fun fact:</b> "MOAB" can also refer to the GBU-43/B Massive Ordnance Air Blast, 
-            a large-yield conventional bomb developed by the U.S. military, or equipment rental software </p> 
+            <div class="Moabpic1">
+                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR5aOOOKqabtkGsIi_oxHkQpKNnhZNJw32A8myurZJPg&s=10" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR5aOOOKqabtkGsIi_oxHkQpKNnhZNJw32A8myurZJPg&s=10" alt="Moab"></a>
+
+                <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Moab,_Utah_downtown.jpg" target="_blank">Wikimedia Commons</a></p>
+            </div>
+
+            <div class="funfact">
+                <p><span class="funfactB">Fun fact:</span> "MOAB" can also refer to the GBU-43/B Massive Ordnance Air Blast, 
+                a large-yield <br>conventional bomb developed by the U.S. military, or equipment rental software.</p>
+            </div>
 
             <h2>What can I do in Moab ?</h2>
 
             <p>Some things you can do in Moab include:</p>
 
-            <h3>Parks & Scenic Viewpoints</h3>
+            <div id="List">
 
-            <ol>
+                <h3>Parks & Scenic Viewpoints</h3>
 
-                <li>Arches National Park (including Delicate Arch, the Windows Section, and Devils Garden)</li>
+                <ol>
 
-                <li>Canyonlands National Park (Island in the Sky district & Mesa Arch)</li>
+                    <li>Arches National Park (including Delicate Arch, the Windows Section, and Devils Garden)</li>
 
-                <li>Dead Horse Point State Park (Colorado River overlook & trails)</li>
+                    <li>Canyonlands National Park (Island in the Sky district & Mesa Arch)</li>
 
-            </ol>
+                    <li>Dead Horse Point State Park (Colorado River overlook & trails)</li>
 
-            <h3>Hikes & Waterfalls</h3>
+                </ol>
 
-            <ol>
+                <h3>Hikes & Waterfalls</h3>
 
-                <li>Corona Arch (trail outside the national park)</li>
+                <ol>
 
-                <li>Mill Creek Waterfall (canyon hike and swimming hole)</li>
+                    <li>Corona Arch (trail outside the national park)</li>
 
-                <li>Faux Falls (waterfall hike)</li>
+                    <li>Mill Creek Waterfall (canyon hike and swimming hole)</li>
 
-            </ol>
+                    <li>Faux Falls (waterfall hike)</li>
 
-            <h3>Outdoor Adventures & Trails</h3>
+                </ol>
 
-            <ol>
+                <h3>Outdoor Adventures & Trails</h3>
 
-                <li>Off-Roading & 4x4 Jeep/Hummer Tours (including Hell's Revenge and Top of the World)</li>
+                <ol>
 
-                <li>Whitewater Rafting & Kayaking (on the Colorado River)</li>
+                    <li>Off-Roading & 4x4 Jeep/Hummer Tours (including Hell's Revenge and Top of the World)</li>
 
-                <li>Mountain Biking (including the Slickrock Bike Trail and The Whole Enchilada)</li>
+                    <li>Whitewater Rafting & Kayaking (on the Colorado River)</li>
 
-            </ol>
+                    <li>Mountain Biking (including the Slickrock Bike Trail and The Whole Enchilada)</li>
 
-            <h3>Local Sights & Family Attractions</h3>
+                </ol>
 
-            <ol>
+                <h3>Local Sights & Family Attractions</h3>
 
-                <li>Moab Giants (outdoor dinosaur trail and museum)</li>
+                <ol>
 
-                <li>Hole 'N' The Rock (carved sandstone home and petting zoo)</li>
+                    <li>Moab Giants (outdoor dinosaur trail and museum)</li>
 
-                <li>Downtown Main Street (including the Moab Rock Shop, local dining, and shops) </li>
+                    <li>Hole 'N' The Rock (carved sandstone home and petting zoo)</li>
 
-            </ol>
+                    <li>Downtown Main Street (including the Moab Rock Shop, local dining, and shops) </li>
+
+                </ol>
+
+            </div>
+
+            <div class="Moabpic2">
+                <a href="https://cdn12.picryl.com/photo/2016/12/31/moab-utah-arches-nature-landscapes-f03131-1024.jpg" target="_blank">
+                <img src="https://cdn12.picryl.com/photo/2016/12/31/moab-utah-arches-nature-landscapes-f03131-1024.jpg" alt="Moab"></a>
+
+                <p>Image from:<a href="https://picryl.com/media/moab-utah-arches-nature-landscapes-f03131" target="_blank">Picryl</a></p>
+            </div>
+        
 
         </body>
     </html>
