@@ -35,6 +35,12 @@
 
             .details{font-size: 18px;}
 
+            .paragraph{padding-left: 20px;}
+
+            .paragraph2{padding-left: 20px;}
+
+            #moreInfo{display: none;}
+
         </style>
     </head>
 
@@ -56,17 +62,28 @@
 
             <h2>What is Moab ?</h2>
 
+            <div class="paragraph">
             <p>Moab is a world-renowned desert adventure town in southeastern Utah that sits along the banks of the Colorado River,
             serving as the primary gateway to both Arches and Canyonlands National Parks.<br>Framed by towering red sandstone cliffs, 
             deep canyons, and the snow-capped La Sal Mountains, the area evolved from an Indigenous homeland, Mormon farming settlement,
-            and 1950s uranium mining hub into a global<br> mecca for outdoor recreation. Today, this small, laid-back community attracts 
+            and 1950s uranium mining hub into a global mecca for outdoor recreation. Today, this small, laid-back community attracts 
             millions of visitors each year who come to hike, mountain bike, off-road, raft, and stargaze beneath its pristine desert skies.</p>
+            </div>
 
             <div class="Moabpic1">
                 <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR5aOOOKqabtkGsIi_oxHkQpKNnhZNJw32A8myurZJPg&s=10" target="_blank">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR5aOOOKqabtkGsIi_oxHkQpKNnhZNJw32A8myurZJPg&s=10" alt="Moab"></a>
 
                 <p>Image from:<a href="https://commons.wikimedia.org/wiki/File:Moab,_Utah_downtown.jpg" target="_blank">Wikimedia Commons</a></p>
+            </div>
+
+            <h2>Why you should go to Moab?</h2>
+
+            <div class="paragraph2">
+            <p>People visit Moab, Utah for its dramatic red rock landscapes and direct access to iconic parks like Arches National Park, Canyonlands National Park,
+            and Dead Horse Point State Park. Beyond sightseeing, the area serves as a premier outdoor hub for hiking, mountain biking, rock climbing, off-roading, 
+            and whitewater rafting along the Colorado River. Visitors are also drawn to its dark skies for stargazing, ancient rock art and dinosaur tracks, and a 
+            welcoming downtown filled with local shops, outfitters, and dining spots to unwind after a day in the desert.</p>
             </div>
 
             <div class="funfact">
@@ -137,8 +154,6 @@
                 <p>Image from:<a href="https://picryl.com/media/moab-utah-arches-nature-landscapes-f03131" target="_blank">Picryl</a></p>
             </div>
         
-        <button>More Info.</button>
-
             <div class="Moabpic3">
                 <div class="Moabpic3.1">
                     <a href="https://felixwong.com/gallery/images/a/arches-moab-sep-2025-7.jpg" target="_blank">
@@ -147,17 +162,27 @@
                 <p>Image from:<a href="https://felixwong.com/2025/09/arches-national-park-moab-red-rocks-arches-and-utah-quirks/" target="_blank">Felix Wong</a></p>
             </div>
 
+        <button onclick="showHide()">More Info.</button>
 
+        <div id="moreInfo">
+        <p>Hotels in Moab, Utah range from budget-friendly motels and familiar chain properties along US-191 to upscale boutique stays and full-service downtown resorts. 
+        Nightly rates fluctuate heavily by season, dropping to roughly $50 to $170 during quieter winter periods and climbing between $200 and $510+ during the peak spring and 
+        fall travel months. Travelers can choose between practical, value-oriented chains like Aarchway Inn, Wingate by Wyndham, and SpringHill Suites—which typically offer 
+        free breakfast, pools, and oversized parking for trailers or RVs—or higher-end downtown options like Hoodoo Moab and Gonzo Inn for spa services, dining, and easy 
+        walkability.</p>
+        </div>
 
 
         <script>
 
+        let item = document.getElementById("moreInfo").style.display
 
+        function showHide(){let item = document.getElementById("moreInfo");
 
-
-
-
-
+            if(item.style.display == "none"){
+                item.style.display = "block";}
+                    else{item.style.display = "none";}
+                    }
 
         </script>
     </body>
