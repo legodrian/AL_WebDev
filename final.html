@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         
@@ -17,6 +17,8 @@
 
             img{width: 350px;}
 
+            body{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
             body{color:rgb(14, 0, 138);background-color: #FFDBBB; font-size: 20px;}
 
             .Moabpic{margin-top: 25px; padding: 25px;}
@@ -27,8 +29,8 @@
 
             .funfactB{font-weight: bold;}
 
-            .funfact{ width: 50%; border: solid 5px rgb(250, 170, 20); display: flex; justify-content: left; padding-left: 25px; background-color: rgb(255, 200, 81);}
-
+            .funfact {width: 60%;border: solid 5px rgb(250, 170, 20);display: flex;justify-content: left;padding: 15px 25px;margin: 25px auto;background-color: rgb(255, 200, 81);}
+            
             #List{padding-left: 50px;}
 
             .details{font-size: 18px;}
@@ -41,11 +43,23 @@
 
             #Moabpic3{width: 350px;}
 
+            .page{display: flex; flex-direction: column; align-items: center; max-width: 1000px; margin: 0 auto; padding: 20px;}
+
+            button {padding: 10px 20px;font-size: 18px}
+
+            button{margin: 15px 20px;}
+
+            h2{margin: 15px 20px;}
+
+            p{margin: 15px 20px;}
+            
         </style>
     </head>
 
     <body>
 
+        <div class="page">
+        
             <h1>Moab</h1>
 
             <div class="details">
@@ -158,7 +172,9 @@
 
         <div id="moreInfo">
 
-            <img id="Moabpic3" src="https://felixwong.com/gallery/images/a/arches-moab-sep-2025-7.jpg" alt="Moab" onclick="changeImage()">  
+           
+        <img id="Moabpic3" src="https://felixwong.com/gallery/images/a/arches-moab-sep-2025-7.jpg" alt="Moab" onmouseover="hoverIn()" onmouseout="hoverOut()">
+
             
         <p>Hotels in Moab, Utah range from budget-friendly motels and familiar chain properties along US-191 to upscale boutique stays and full-service downtown resorts. 
         Nightly rates fluctuate heavily by season, dropping to roughly $50 to $170 during quieter winter periods and climbing between $200 and $510+ during the peak spring and 
@@ -167,7 +183,8 @@
         walkability.</p>
         </div>
 
-
+        </div>
+            
         <script>
             
             function showHide(){
@@ -180,14 +197,12 @@
                 }
             }
 
-            function changeImage(){
-                let item = document.getElementById("MoabImage");
+            function hoverIn() {
+              document.getElementById("Moabpic3").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3GlE8jYnsmGM-BW2G6MySNLNw5S3YN6ihY6PyS2o9uw&s=10";
+            }
 
-                if(item.src == "https://felixwong.com/gallery/images/a/arches-moab-sep-2025-7.jpg"){
-                    item.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3GlE8jYnsmGM-BW2G6MySNLNw5S3YN6ihY6PyS2o9uw&s=10";
-                }else{
-                    item.src = "https://felixwong.com/gallery/images/a/arches-moab-sep-2025-7.jpg";
-                }
+            function hoverOut() {
+              document.getElementById("Moabpic3").src = "https://felixwong.com/gallery/images/a/arches-moab-sep-2025-7.jpg";
             }
 
         </script>
