@@ -29,7 +29,7 @@
 
             .funfactB{font-weight: bold;}
 
-            .funfact {width: 60%;border: solid 5px rgb(250, 170, 20);display: flex;justify-content: left;padding: 15px 25px;margin: 25px auto;background-color: rgb(255, 200, 81);}
+            .funfact {width: 35%; border: solid 5px rgb(250, 170, 20); display: flex; justify-content: left; padding: 15px 25px; margin: 10px; background-color: rgb(255, 200, 81);}
             
             #List{padding-left: 50px;}
 
@@ -43,22 +43,18 @@
 
             #Moabpic3{width: 350px;}
 
-            .page{display: flex; flex-direction: column; align-items: center; max-width: 1000px; margin: 0 auto; padding: 20px;}
+            #Moabpic4{width: 350px}
 
             button {padding: 10px 20px;font-size: 18px}
 
-            button{margin: 15px 20px;}
+            .paragraph1{padding-right: 100px; padding-left: 100px;}
 
-            h2{margin: 15px 20px;}
+            .paragraph2{padding-right: 100px; padding-left: 100px; padding-bottom: 10px;}
 
-            p{margin: 15px 20px;}
-            
         </style>
     </head>
 
     <body>
-
-        <div class="page">
         
             <h1>Moab</h1>
 
@@ -76,12 +72,12 @@
 
             <h2>What is Moab ?</h2>
 
-            <div class="paragraph">
+            <div class="paragraph1">
             <p>Moab is a world-renowned desert adventure town in southeastern Utah that sits along the banks of the Colorado River,
-            serving as the primary gateway to both Arches and Canyonlands National Parks.<br>Framed by towering red sandstone cliffs, 
+            serving as the primary gateway to both Arches and Canyonlands National Parks.Framed by towering red sandstone cliffs, 
             deep canyons, and the snow-capped La Sal Mountains, the area evolved from an Indigenous homeland, Mormon farming settlement,
             and 1950s uranium mining hub into a global mecca for outdoor recreation. Today, this small, laid-back community attracts 
-            millions of visitors each year who come to hike, mountain bike, off-road, raft, and stargaze beneath its pristine desert skies.</p>
+            millions of visitors each year who come to hike, mountain bike, off-road, raft, and stargaze beneath its pristine desert skies.
             </div>
 
             <div class="Moabpic1">
@@ -182,8 +178,6 @@
         free breakfast, pools, and oversized parking for trailers or RVs—or higher-end downtown options like Hoodoo Moab and Gonzo Inn for spa services, dining, and easy 
         walkability.</p>
         </div>
-
-        </div>
             
         <script>
             
@@ -197,8 +191,11 @@
                 }
             }
 
+            let images = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3GlE8jYnsmGM-BW2G6MySNLNw5S3YN6ihY6PyS2o9uw&s=10", 
+                "https://felixwong.com/gallery/images/a/arches-moab-sep-2025-7.jpg" , ]
+
             function hoverIn() {
-              document.getElementById("Moabpic3").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3GlE8jYnsmGM-BW2G6MySNLNw5S3YN6ihY6PyS2o9uw&s=10";
+              document.getElementById("Moabpic3").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3GlE8jYnsmGM-BW2G6MySNLNw5S3YN6ihY6PyS2o9uw&s=10" ;
             }
 
             function hoverOut() {
