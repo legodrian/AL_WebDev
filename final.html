@@ -191,15 +191,17 @@
                 }
             }
 
-            let images = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3GlE8jYnsmGM-BW2G6MySNLNw5S3YN6ihY6PyS2o9uw&s=10", 
-                "https://felixwong.com/gallery/images/a/arches-moab-sep-2025-7.jpg" , ]
+            let images = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3GlE8jYnsmGM-BW2G6MySNLNw5S3YN6ihY6PyS2o9uw&s=10",
+                "https://felixwong.com/gallery/images/a/arches-moab-sep-2025-7.jpg" ]; 
+
+            let moabImg = document.getElementById("Moabpic3");
 
             function hoverIn() {
-              document.getElementById("Moabpic3").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3GlE8jYnsmGM-BW2G6MySNLNw5S3YN6ihY6PyS2o9uw&s=10" ;
+                moabImg.src = images[0];
             }
 
             function hoverOut() {
-              document.getElementById("Moabpic3").src = "https://felixwong.com/gallery/images/a/arches-moab-sep-2025-7.jpg";
+                moabImg.src = images[1];
             }
 
         </script>
