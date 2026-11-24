@@ -41,21 +41,24 @@
 
             #moreInfo{display: none;}
 
-            #Moabpic3{width: 350px;}
+            #Moabpic3 {width: 350px; height: 250px;}
 
             #Moabpic4{width: 350px}
 
-            button{padding: 10px 20px;font-size: 18px}
+            button{padding: 10px 20px;font-size: 18px;}
 
             .paragraph1{padding-right: 100px; padding-left: 100px;}
 
             .paragraph2{padding-right: 100px; padding-left: 100px; padding-bottom: 10px;}
 
+            .webpage{display: flex; flex-direction: column; align-items: stretch;}  
+
         </style>
     </head>
 
     <body>
-        
+
+        <div class="webpage">
             <h1>Moab</h1>
 
             <div class="details">
@@ -74,7 +77,7 @@
 
             <div class="paragraph1">
             <p>Moab is a world-renowned desert adventure town in southeastern Utah that sits along the banks of the Colorado River,
-            serving as the primary gateway to both Arches and Canyonlands National Parks.Framed by towering red sandstone cliffs, 
+            serving as the primary gateway to both Arches and Canyonlands National Parks. Framed by towering red sandstone cliffs, 
             deep canyons, and the snow-capped La Sal Mountains, the area evolved from an Indigenous homeland, Mormon farming settlement,
             and 1950s uranium mining hub into a global mecca for outdoor recreation. Today, this small, laid-back community attracts 
             millions of visitors each year who come to hike, mountain bike, off-road, raft, and stargaze beneath its pristine desert skies.
@@ -164,11 +167,12 @@
                 <p>Image from:<a href="https://picryl.com/media/moab-utah-arches-nature-landscapes-f03131" target="_blank">Picryl</a></p>
             </div>
 
-        <button onclick="showHide()">More Info.</button>
+        <button onclick="showHide()" id="text">More Info.</button>
 
         <div id="moreInfo">
 
-           
+        <h2>Where to Stay in Moab?</h2>
+            
         <img id="Moabpic3" src="https://felixwong.com/gallery/images/a/arches-moab-sep-2025-7.jpg" alt="Moab" onmouseover="hoverIn()" onmouseout="hoverOut()">
 
             
@@ -178,33 +182,32 @@
         free breakfast, pools, and oversized parking for trailers or RVs—or higher-end downtown options like Hoodoo Moab and Gonzo Inn for spa services, dining, and easy 
         walkability.</p>
         </div>
+
+        </div>
             
         <script>
             
-            function showHide(){
-                let item = document.getElementById("moreInfo");
+function showHide(){
+    let item = document.getElementById("moreInfo");
+    let button = document.getElementById("text");
 
-                if(item.style.display == "none"){
-                    item.style.display = "block";
-                }else{
-                    item.style.display = "none";
-                }
-            }
+    if(item.style.display == "none"){
+        item.style.display = "block";
+        button.innerHTML = "Show Less";
+    }else{
+        item.style.display = "none";
+        button.innerHTML = "More Info.";
+    }
+}
 
             let images = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3GlE8jYnsmGM-BW2G6MySNLNw5S3YN6ihY6PyS2o9uw&s=10",
-                "https://felixwong.com/gallery/images/a/arches-moab-sep-2025-7.jpg" ]; 
+                "https://felixwong.com/gallery/images/a/arches-moab-sep-2025-7.jpg"];
 
-            let moabImg = document.getElementById("Moabpic3");
 
-            function hoverIn() {
-                moabImg.src = images[0];
-            }
+            function hoverIn(){document.getElementById("Moabpic3").src = images[0];}
 
-            function hoverOut() {
-                moabImg.src = images[1];
-            }
+            function hoverOut(){document.getElementById("Moabpic3").src = images[1];}
 
         </script>
     </body>
 </html>
-    
